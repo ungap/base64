@@ -1,0 +1,16 @@
+{
+  "name": "@ungap/base64",
+  "version": "0.0.0",
+  "description": "Uint8Array.fromBase64 and Uint8Array.prototype.toBase64 polyfill",
+  "main": "index.js",
+  "module": "index.js",
+  "keywords": [
+    "Uint8Array",
+    "toBase64",
+    "fromBase64",
+    "polyfill"
+  ],
+  "author": "Andrea Giammarchi",
+  "license": "MIT",
+  "type": "module"
+}
