@@ -19,7 +19,7 @@
     "README.md"
   ],
   "scripts": {
-    "test": "node test.js"
+    "test": "c8 node test.js"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/ungap/base64/issues"
   },
-  "homepage": "https://github.com/ungap/base64#readme"
+  "homepage": "https://github.com/ungap/base64#readme",
+  "devDependencies": {
+    "c8": "^11.0.0"
+  }
 }
