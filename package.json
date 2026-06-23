@@ -1,6 +1,6 @@
 {
   "name": "@ungap/base64",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Uint8Array.fromBase64 and Uint8Array.prototype.toBase64 polyfill",
   "main": "index.js",
   "module": "index.js",
