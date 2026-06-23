@@ -12,5 +12,21 @@
   ],
   "author": "Andrea Giammarchi",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ungap/base64.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ungap/base64/issues"
+  },
+  "homepage": "https://github.com/ungap/base64#readme"
 }

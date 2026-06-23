@@ -2,12 +2,14 @@ const { defineProperty } = Object;
 const { prototype } = Uint8Array;
 
 const base64 = 'base64';
+const toBase64 = 'toBase64';
+const fromBase64 = 'fromBase64';
 
-if (!(base64 in prototype)) {
+if (!(toBase64 in prototype)) {
   const { fromCharCode } = String;
   const url = c => c === '+' ? '-' : '_';
   const options = { alphabet: base64, omitPadding: false };
-  defineProperty(prototype, 'toBase64', {
+  defineProperty(prototype, toBase64, {
     configurable: true,
     writable: true,
     value({
@@ -25,10 +27,10 @@ if (!(base64 in prototype)) {
   });
 }
 
-if (!('fromBase64' in Uint8Array)) {
+if (!(fromBase64 in Uint8Array)) {
   const base = c => c === '-' ? '+' : '/';
   const options = { alphabet: base64, lastChunkHandling: 'loose' };
-  defineProperty(Uint8Array, 'fromBase64', {
+  defineProperty(Uint8Array, fromBase64, {
     configurable: true,
     writable: true,
     value(string, {
